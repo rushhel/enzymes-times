@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="ЭТРА — живые ферменты ручной работы. Энзимы нового поколения для вашего здоровья.">
+  <meta name="theme-color" content="#2D6A4F">
+  <title>ЭТРА — Энзимы нового поколения</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/bottle-landing.css">
+</head>
+<body>
+
+  <!-- ========== INTRO VIDEO GATEWAY ========== -->
+  <div class="intro-gate" aria-label="Вступительное видео">
+    <video class="intro-gate__video" src="assets/video/intro.mp4" autoplay muted loop playsinline></video>
+    <div class="intro-gate__overlay"></div>
+    <div class="intro-gate__content">
+      <div class="intro-gate__brand">Э<span class="mark">Т</span>РА</div>
+      <div class="intro-gate__tagline">Живые ферменты ручной работы</div>
+      <button class="intro-gate__skip" type="button">Войти на сайт →</button>
+    </div>
+    <div class="intro-gate__progress" aria-hidden="true"></div>
+  </div>
+
+  <!-- ========== PROMO BAR ========== -->
+  <div class="promo-bar">
+    <div class="promo-bar__inner">
+      Подарок к первому заказу — промокод <strong>START10</strong> · −10%
+    </div>
+    <button class="promo-bar__close" type="button" aria-label="Закрыть">×</button>
+  </div>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a href="#top" class="brand">ЭТ<span class="brand__mark">Р</span>А<span class="brand__dot"></span></a>
+
+      <nav class="site-nav" aria-label="Навигация">
+        <ul class="site-nav__list">
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#purpose">Зачем</a></li>
+          <li><a href="#start">С чего начать</a></li>
+          <li><a href="#team">Команда</a></li>
+        </ul>
+        <ul class="site-nav__mobile">
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="courses.html">Курсы</a></li>
+          <li><a href="catalog.html">Новинки</a></li>
+          <li><a href="catalog.html">Места</a></li>
+          <li><a href="encyclopedia.html">Энциклопедия</a></li>
+          <li><a href="#coop">Производство вместе</a></li>
+          <li><a href="#team">Команда</a></li>
+          <li><a href="#partners">Партнёры</a></li>
+          <li><a href="#" class="js-bottom-cart site-nav__icon-link"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M6 2l1.5 4h11L20 2M3 6h18l-2 12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L3 6z" stroke="currentColor" fill="none" stroke-width="1.6"/></svg> Корзина</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="cart-toggle" aria-label="Корзина">
+          <svg viewBox="0 0 24 24"><path d="M6 2l1.5 4h11L20 2M3 6h18l-2 12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L3 6z"/></svg>
+          <span class="cart-toggle__count is-empty">0</span>
+        </button>
+        <button class="menu-toggle" aria-label="Меню" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== BOTTLE SHOWCASE + ACCORDION ========== -->
+  <section class="bottle-showcase" id="s-etra">
+    <div class="wrap">
+      <div class="bottle-showcase__heading">
+        <div class="bottle-showcase__eyebrow">Живые ферменты ручной работы</div>
+        <h1 class="bottle-showcase__title">Энзимы нового поколения <em>для вашего здоровья</em></h1>
+      </div>
+      <div class="bottle-showcase__inner">
+
+        <!-- Бутылка слева -->
+        <div class="bottle-showcase__visual">
+          <img src="buttle2.png" alt="Бутылка ЭТРА" class="bottle-showcase__img">
+        </div>
+
+        <!-- Меню-аккордеон справа -->
+        <div class="bottle-showcase__menu">
+
+          <button type="button" class="bottle-showcase__video-btn js-open-about">
+            Видео<br>О нас
+          </button>
+
+          <details class="bottle-accordion" id="s-about">
+            <summary class="bottle-accordion__title">Зачем вы тут?</summary>
+            <div class="bottle-accordion__body">
+              <p>Живые ферменты ручной работы. Энзимы нового поколения для вашего здоровья. Компания ЭТРА создаёт энзимные напитки на основе уникальных ферментов, чистых продуктов и растительных пробиотиков.</p>
+            </div>
+          </details>
+
+          <details class="bottle-accordion" id="s-enzymes">
+            <summary class="bottle-accordion__title">Энзимы</summary>
+            <div class="bottle-accordion__body">
+              <p>Активные ферменты расщепляют сложные молекулы, улучшая усвоение питательных веществ и ускоряя метаболизм.</p>
+            </div>
+          </details>
+
+          <details class="bottle-accordion" id="s-bacteria">
+            <summary class="bottle-accordion__title">Бактерии</summary>
+            <div class="bottle-accordion__body">
+              <p>Миллиарды живых пробиотиков восстанавливают микрофлору кишечника и укрепляют иммунную систему.</p>
+            </div>
+          </details>
+
+          <details class="bottle-accordion" id="s-tech">
+            <summary class="bottle-accordion__title">Технология</summary>
+            <div class="bottle-accordion__body">
+              <p>Многоступенчатая ферментация при контролируемой температуре сохраняет максимум полезных веществ.</p>
+            </div>
+          </details>
+
+          <a href="catalog.html" class="btn btn--gold bottle-showcase__catalog">Каталог →</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ЗАЧЕМ ВЫ ТУТ ========== -->
+  <section class="purpose" id="purpose">
+    <div class="wrap">
+      <div class="purpose__frame reveal">
+        <div class="purpose__tabs">
+          <button class="purpose-tab is-active" data-tab="enzymes">Энзимы</button>
+          <button class="purpose-tab" data-tab="bacteria">Бактерии</button>
+          <button class="purpose-tab" data-tab="tech">Технология</button>
+          <button class="purpose-tab" data-tab="result">Результат</button>
+        </div>
+        <div class="purpose__panels">
+          <div class="purpose-panel is-active" data-panel="enzymes">
+            <div class="purpose-panel__number">01</div>
+            <h3 class="purpose-panel__title">Энзимы</h3>
+            <p class="purpose-panel__body">Активные ферменты расщепляют сложные молекулы, улучшая усвоение питательных веществ и ускоряя метаболизм. Каждый напиток ЭТРА содержит живые энзимы, полученные методом натуральной ферментации.</p>
+          </div>
+          <div class="purpose-panel" data-panel="bacteria">
+            <div class="purpose-panel__number">02</div>
+            <h3 class="purpose-panel__title">Бактерии</h3>
+            <p class="purpose-panel__body">Миллиарды живых пробиотиков восстанавливают микрофлору кишечника и укрепляют иммунную систему. Наши штаммы выращиваются на чистых субстратах без синтетических добавок.</p>
+          </div>
+          <div class="purpose-panel" data-panel="tech">
+            <div class="purpose-panel__number">03</div>
+            <h3 class="purpose-panel__title">Технология</h3>
+            <p class="purpose-panel__body">Многоступенчатая ферментация при контролируемой температуре сохраняет максимум полезных веществ. Процесс занимает от 21 до 90 дней в зависимости от рецептуры.</p>
+          </div>
+          <div class="purpose-panel" data-panel="result">
+            <div class="purpose-panel__number">04</div>
+            <h3 class="purpose-panel__title">Результат</h3>
+            <p class="purpose-panel__body">Энергия, лёгкость, здоровое пищеварение и крепкий иммунитет — всё это в каждой бутылке ЭТРА. Более 25 000 довольных клиентов за 10 лет работы.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== С ЧЕГО НАЧАТЬ ========== -->
+  <section class="start-section" id="start">
+    <div class="wrap">
+      <div class="start-hero reveal">
+        <div class="start-hero__eyebrow">● Начало пути</div>
+        <h2 class="start-hero__title">С <em>чего</em> начать</h2>
+        <p class="start-hero__lede">Простая формула. 6–12 литров энзимных напитков в месяц на человека.</p>
+        <div class="start-hero__cta-row">
+          <button class="btn btn--outline js-toggle-formula">Показать формулу</button>
+          <a href="#" class="btn btn--gold js-open-quiz">Пройти тест →</a>
+        </div>
+        <div class="start-hero__expand">
+          <div class="start-hero__formula">
+            <div class="formula-step">
+              <div class="formula-step__num">1</div>
+              <div class="formula-step__label">1–3 недели</div>
+              <div class="formula-step__text">Чистим — убираем патогенов и воспаление</div>
+            </div>
+            <div class="formula-step">
+              <div class="formula-step__num">2</div>
+              <div class="formula-step__label">3–6 недель</div>
+              <div class="formula-step__text">Наполняем — бактериями, минералами, энзимами</div>
+            </div>
+            <div class="formula-step">
+              <div class="formula-step__num">3</div>
+              <div class="formula-step__label">Всегда</div>
+              <div class="formula-step__text">Закрепляем — стабильный микробиом на каждый день</div>
+            </div>
+          </div>
+          <div class="start-hero__cta-row">
+            <a href="#" class="btn btn--primary js-open-quiz">Подобрать под себя</a>
+            <a href="catalog.html" class="btn btn--outline">Смотреть каталог</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== РЕЗУЛЬТАТЫ ========== -->
+  <section class="results-block" id="results">
+    <div class="wrap">
+      <h2 class="results-block__title">Результат</h2>
+      <p class="results-block__subtitle">Энергия, лёгкость, здоровое пищеварение и крепкий иммунитет — всё это в каждой бутылке ЭТРА.</p>
+      <div class="results-block__grid">
+        <div class="results-block__card">
+          <div class="results-block__num">25 000+</div>
+          <div class="results-block__label">Довольных клиентов</div>
+        </div>
+        <div class="results-block__card">
+          <div class="results-block__num">10 лет</div>
+          <div class="results-block__label">Исследований ферментации</div>
+        </div>
+        <div class="results-block__card">
+          <div class="results-block__num">100%</div>
+          <div class="results-block__label">Натуральный состав</div>
+        </div>
+        <div class="results-block__card">
+          <div class="results-block__num">8+</div>
+          <div class="results-block__label">Уникальных напитков</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== МАГАЗИН / КАТАЛОГ ========== -->
+  <section id="catalog">
+    <div class="wrap">
+      <div class="catalog-cta-card reveal">
+        <div>
+          <div class="catalog-cta-card__title">Каталог напитков</div>
+          <div class="catalog-cta-card__sub">Выберите свой энзимный напиток</div>
+        </div>
+        <a href="catalog.html" class="btn btn--gold">Перейти в каталог →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ВИДЕО / О НАС ========== -->
+  <section class="about-cta" id="about">
+    <div class="wrap">
+      <div class="about-cta__inner reveal">
+        <button type="button" class="about-cta__play js-open-about">
+          <svg viewBox="0 0 24 24" width="48" height="48"><polygon points="5,3 19,12 5,21" fill="currentColor"/></svg>
+        </button>
+        <div class="about-cta__text">
+          <h3 class="about-cta__title">Узнайте больше о нас</h3>
+          <p>Посмотрите видео о том, как создаются наши напитки</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ПРОИЗВОДСТВО ВМЕСТЕ ========== -->
+  <section class="coop-section" id="coop">
+    <div class="wrap">
+      <div class="coop-card reveal">
+        <div class="coop-card__img">
+          <img src="proizvodstvo_2.jpg" alt="Совместное производство">
+        </div>
+        <div class="coop-card__content">
+          <div class="coop-card__label">Совместное производство</div>
+          <div class="coop-card__lede">Откройте <strong>производство вместе</strong> с нами.<br>Станьте со-владельцем проекта МПК Развитие Народных Хозяйств</div>
+          <span class="coop-card__cta">Перейти <span class="coop-card__cta-arrow">→</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== КОМАНДА ========== -->
+  <section class="team-section" id="team">
+    <div class="wrap">
+      <div class="team-block reveal">
+        <span class="team-block__label">Команда</span>
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="team-card__avatar">К</div>
+            <div class="team-card__name">Кирилл</div>
+            <div class="team-card__role">Основатель</div>
+            <div class="team-card__bio">Технология, производственная линия. Десять лет исследования ферментации.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar">А</div>
+            <div class="team-card__name">Анна</div>
+            <div class="team-card__role">Курсы</div>
+            <div class="team-card__bio">Авторские программы, сопровождение клиентов.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar">М</div>
+            <div class="team-card__name">Максим</div>
+            <div class="team-card__role">Качество</div>
+            <div class="team-card__bio">Контроль производства, лабораторные тесты.</div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar">Е</div>
+            <div class="team-card__name">Елена</div>
+            <div class="team-card__role">Комьюнити</div>
+            <div class="team-card__bio">Связь с клиентами, отзывы, поддержка.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ПАРТНЁРЫ ========== -->
+  <section id="partners">
+    <div class="wrap">
+      <div class="partners-strip reveal">
+        <div class="partners-strip__title">Партнёры<br><em>Сотрудничество</em></div>
+        <div class="partners-strip__logos">
+          <span>Гости Групп</span>
+          <span>KHome</span>
+          <span>Ассоциация народной медицины</span>
+          <span>Школа Уникального Развития Сердца</span>
+          <span>НКО Родословная</span>
+          <span>АГЛИ КЛИНИКА</span>
+          <span>Живое Железо РФ</span>
+          <span>SUN SKY</span>
+          <span>RIXOS</span>
+          <span>Исток Здоровья</span>
+          <span>Клиника нутрициологии</span>
+          <span>ГПВК</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div>
+        <div class="site-footer__brand">Э<em>Т</em>РА</div>
+        <div class="site-footer__copy">&copy; 2026 &middot; Все права защищены</div>
+      </div>
+      <div class="site-footer__links">
+        <a href="catalog.html">Каталог</a>
+        <a href="encyclopedia.html">Энциклопедия</a>
+        <a href="courses.html">Курсы</a>
+        <a href="recipes.html">Рецепты</a>
+        <a href="about.html">О нас</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== BOTTOM NAV ========== -->
+  <nav class="bottom-nav" aria-label="Нижняя навигация">
+    <a href="#top" class="bottom-nav__item is-active">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r="1"/></svg>
+      <span>О нас</span>
+    </a>
+    <a href="catalog.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      <span>Каталог</span>
+    </a>
+    <a href="encyclopedia.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <span>Знания</span>
+    </a>
+    <a href="recipes.html" class="bottom-nav__item">
+      <svg viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+      <span>Рецепты</span>
+    </a>
+    <button class="bottom-nav__item js-bottom-cart" type="button">
+      <svg viewBox="0 0 24 24"><path d="M6 2l1.5 4h11L20 2M3 6h18l-2 12a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2L3 6z"/></svg>
+      <span>Корзина</span>
+    </button>
+  </nav>
+
+  <!-- ========== MODALS ========== -->
+  <div class="product-modal" aria-hidden="true"><div class="product-modal__body"></div></div>
+  <div class="quiz-modal" aria-hidden="true"><div class="quiz-modal__body"></div></div>
+  <div class="about-modal" aria-hidden="true">
+    <div class="about-modal__body">
+      <button class="about-modal__close" aria-label="Закрыть">&times;</button>
+      <div class="about-modal__video"><video src="assets/video/intro.mp4" controls muted loop playsinline></video></div>
+      <h3 class="about-modal__title">ЭТРА — источник трансформации</h3>
+      <p>В основе — уникальные энзимы, чистые продукты и растительные пробиотики, которые создают уникальные напитки.</p>
+    </div>
+  </div>
+
+  <!-- ========== CART DRAWER ========== -->
+  <div class="cart-backdrop"></div>
+  <aside class="cart-drawer" aria-label="Корзина">
+    <div class="cart-drawer__header">
+      <div class="cart-drawer__title">Корзина</div>
+      <button class="cart-drawer__close" aria-label="Закрыть">&times;</button>
+    </div>
+    <div class="cart-drawer__list"></div>
+    <div class="cart-drawer__footer">
+      <div class="cart-drawer__totals">
+        <span class="cart-drawer__totals-label">К оплате</span>
+        <span class="cart-drawer__total">&euro;0</span>
+      </div>
+      <a href="#" class="btn btn--primary btn--lg cart-drawer__checkout">Оформить заказ</a>
+    </div>
+  </aside>
+
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.querySelector('.js-bottom-cart')?.addEventListener('click', function() {
+      document.querySelector('.cart-toggle')?.click();
+    });
+
+    // Accordion: only one open at a time
+    document.querySelectorAll('.bottle-accordion').forEach(function(el) {
+      el.addEventListener('toggle', function() {
+        if (this.open) {
+          document.querySelectorAll('.bottle-accordion').forEach(function(other) {
+            if (other !== el) other.removeAttribute('open');
+          });
+        }
+      });
+    });
+
+    // Purpose tabs
+    document.querySelectorAll('.purpose-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        var target = this.dataset.tab;
+        document.querySelectorAll('.purpose-tab').forEach(function(t) { t.classList.remove('is-active'); });
+        document.querySelectorAll('.purpose-panel').forEach(function(p) { p.classList.remove('is-active'); });
+        this.classList.add('is-active');
+        document.querySelector('[data-panel="' + target + '"]').classList.add('is-active');
+      });
+    });
+
+    // Toggle formula
+    document.querySelector('.js-toggle-formula')?.addEventListener('click', function() {
+      document.querySelector('.start-hero').classList.toggle('is-open');
+      this.textContent = document.querySelector('.start-hero').classList.contains('is-open') ? 'Скрыть формулу' : 'Показать формулу';
+    });
+  </script>
+</body>
+</html>
